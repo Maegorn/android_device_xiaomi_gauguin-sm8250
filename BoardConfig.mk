@@ -21,5 +21,8 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_gauguin
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/gauguin_user_defconfig
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit from the proprietary version
 include vendor/xiaomi/gauguin/BoardConfigVendor.mk
