@@ -25,6 +25,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+TARGET_BOARD_PLATFORM := lito
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
