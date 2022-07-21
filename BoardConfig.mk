@@ -11,6 +11,8 @@ DEVICE_PATH := device/xiaomi/gauguin
 
 BUILD_BROKEN_DUP_RULES := true
 
+TARGET_IS_LAGOON := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
