@@ -28,6 +28,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 TARGET_BOARD_PLATFORM := lito
 TARGET_HAS_FM := true
 
+# Audio configs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
